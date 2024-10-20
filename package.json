@@ -1,8 +1,12 @@
 {
-  "name": "typescript-template",
+  "name": "experiments",
   "version": "1.0.0",
-  "description": "Typescript template to scaffold typescript projects",
+  "description": "This is a repo for experiments",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djeisen642/experiments.git"
+  },
   "author": "Jason Suttles <jasonssuttles@gmail.com>",
   "scripts": {
     "check-types": "echo '--TSC--' && tsc --noemit",
@@ -40,7 +44,7 @@
     "ts-node": "^10.9.2",
     "typescript": "5.5.4"
   },
-  "packageManager": "yarn@4.4.1",
+  "packageManager": "yarn@4.5.1",
   "engines": {
     "node": ">= 20",
     "npm": "please-use-yarn",
