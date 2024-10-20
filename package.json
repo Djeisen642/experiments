@@ -1,0 +1,53 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "Typescript template to scaffold typescript projects",
+  "license": "MIT",
+  "author": "Jason Suttles <jasonssuttles@gmail.com>",
+  "scripts": {
+    "check-types": "echo '--TSC--' && tsc --noemit",
+    "eslint": "echo '--ESLINT--' && eslint --ext \".js,.ts\" ./src",
+    "preinstall": "npx only-allow yarn",
+    "prepare": "husky",
+    "lint": "yarn eslint && yarn check-types",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
+    "print-lint-rules": "eslint --print-config ./src/example.ts > ./temp/rules.txt",
+    "print-test-lint-rules": "eslint --print-config ./src/tests/example.test.ts > ./temp/test-rules.txt",
+    "test": "jest",
+    "up-i": "yarn upgrade-interactive && yarn dedupe"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.4.1",
+    "@commitlint/config-conventional": "19.4.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@tsconfig/node18": "^18.2.4",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.8.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.5",
+    "jest": "^29.7.0",
+    "pinst": "^3.0.0",
+    "prettier": "^3.3.3",
+    "prettier-config-standard": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "5.5.4"
+  },
+  "packageManager": "yarn@4.4.1",
+  "engines": {
+    "node": ">= 20",
+    "npm": "please-use-yarn",
+    "yarn": ">= 4.2.2"
+  },
+  "volta": {
+    "node": "20.17.0",
+    "yarn": "4.2.2"
+  }
+}
