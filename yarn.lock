@@ -1266,13 +1266,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.12":
-  version: 29.5.12
-  resolution: "@types/jest@npm:29.5.12"
+"@types/jest@npm:^29.5.14":
+  version: 29.5.14
+  resolution: "@types/jest@npm:29.5.14"
   dependencies:
     expect: "npm:^29.0.0"
     pretty-format: "npm:^29.0.0"
-  checksum: 10/312e8dcf92cdd5a5847d6426f0940829bca6fe6b5a917248f3d7f7ef5d85c9ce78ef05e47d2bbabc40d41a930e0e36db2d443d2610a9e3db9062da2d5c904211
+  checksum: 10/59ec7a9c4688aae8ee529316c43853468b6034f453d08a2e1064b281af9c81234cec986be796288f1bbb29efe943bc950e70c8fa8faae1e460d50e3cf9760f9b
   languageName: node
   linkType: hard
 
@@ -2547,6 +2547,34 @@ __metadata:
   checksum: 10/63f97bc51f56a491950fb525f9ad94f1916e8a014947f8d8445d3847a665b5471b768522d659f5e865db20b6c2033d2ac10f35fcbd881a4d26407a4f6f18451a
   languageName: node
   linkType: hard
+
+"experiments@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "experiments@workspace:."
+  dependencies:
+    "@commitlint/cli": "npm:19.4.1"
+    "@commitlint/config-conventional": "npm:19.4.1"
+    "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
+    "@tsconfig/node18": "npm:^18.2.4"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/jest": "npm:^29.5.14"
+    "@types/node": "npm:^22.5.1"
+    "@typescript-eslint/eslint-plugin": "npm:^7.18.0"
+    "@typescript-eslint/parser": "npm:^7.18.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-jest: "npm:^28.8.1"
+    eslint-plugin-prettier: "npm:^5.2.1"
+    husky: "npm:^9.1.5"
+    jest: "npm:^29.7.0"
+    pinst: "npm:^3.0.0"
+    prettier: "npm:^3.3.3"
+    prettier-config-standard: "npm:^7.0.0"
+    ts-jest: "npm:^29.2.5"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:5.5.4"
+  languageName: unknown
+  linkType: soft
 
 "exponential-backoff@npm:^3.1.1":
   version: 3.1.1
@@ -5207,34 +5235,6 @@ __metadata:
   checksum: 10/f4254070d9c3d83a6e573bcb95173008d73474ceadbbf620dd32d273940ca18734dff39c2b2480282df9afe5d1675ebed5499a00d791758748ea81f61a38961f
   languageName: node
   linkType: hard
-
-"typescript-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "typescript-template@workspace:."
-  dependencies:
-    "@commitlint/cli": "npm:19.4.1"
-    "@commitlint/config-conventional": "npm:19.4.1"
-    "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
-    "@tsconfig/node18": "npm:^18.2.4"
-    "@tsconfig/strictest": "npm:^2.0.5"
-    "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^22.5.1"
-    "@typescript-eslint/eslint-plugin": "npm:^7.18.0"
-    "@typescript-eslint/parser": "npm:^7.18.0"
-    eslint: "npm:^8.57.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-jest: "npm:^28.8.1"
-    eslint-plugin-prettier: "npm:^5.2.1"
-    husky: "npm:^9.1.5"
-    jest: "npm:^29.7.0"
-    pinst: "npm:^3.0.0"
-    prettier: "npm:^3.3.3"
-    prettier-config-standard: "npm:^7.0.0"
-    ts-jest: "npm:^29.2.5"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:5.5.4"
-  languageName: unknown
-  linkType: soft
 
 "typescript@npm:5.5.4":
   version: 5.5.4
