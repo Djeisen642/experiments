@@ -11,15 +11,15 @@
   "scripts": {
     "check-types": "echo '--TSC--' && tsc --noemit",
     "eslint": "echo '--ESLINT--' && eslint --ext \".js,.ts\" ./src",
-    "preinstall": "npx only-allow yarn",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
-    "lint": "yarn eslint && yarn check-types",
+    "lint": "pnpm eslint && pnpm check-types",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",
     "print-lint-rules": "eslint --print-config ./src/example.ts > ./temp/rules.txt",
     "print-test-lint-rules": "eslint --print-config ./src/tests/example.test.ts > ./temp/test-rules.txt",
     "test": "jest",
-    "up-i": "yarn upgrade-interactive && yarn dedupe"
+    "up-i": "pnpm update -i && pnpm dedupe"
   },
   "devDependencies": {
     "@commitlint/cli": "19.4.1",
@@ -44,11 +44,10 @@
     "ts-node": "^10.9.2",
     "typescript": "5.5.4"
   },
-  "packageManager": "yarn@4.5.1",
+  "packageManager": "pnpm@11.22.0",
   "engines": {
     "node": ">= 20",
-    "npm": "please-use-yarn",
-    "yarn": ">= 4.2.2"
+    "pnpm": ">= 10"
   },
   "volta": {
     "node": "20.17.0",
